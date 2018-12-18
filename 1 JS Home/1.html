@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Javascript</title>
+    <h1>My First Javascript</h1>
+
+    <script>
+        function changeContent(id){
+            document.getElementById(id).innerHTML = "Change";
+        }
+    </script>
+
+</head>
+<body>
+    <p id = "demo1">This is my First paragraph</p>
+    <p id = "demo2">This is my Second paragraph</p>
+
+    <button type="button" onclick="changeContent('demo1')">Click here to change 1st paragraph</button>
+    <button type="button" onclick="changeContent('demo2')">Click here to change 2nd paragraph</button>
+
+</body>
+</html>

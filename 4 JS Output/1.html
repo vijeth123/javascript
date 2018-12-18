@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Output</title>
+    <h1>Javascript Output</h1>
+
+    <script>
+        function myAlert(text){
+            document.getElementById('id').innerHTML = text;
+            window.alert(text);
+            console.log(text);
+        }
+
+        function eraseAndWrite(text){
+            document.write(text);
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <p id = "id"></p>
+
+    <button onclick="myAlert('Hello Vijeth!')" title="Click here 1">Click here 1</button>
+    <button onclick="eraseAndWrite('Hello Vijeth!')" title="Click here 2">Click here 2</button>
+
+</body>
+</html>

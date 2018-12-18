@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hide and Show</title>
+    <h1>Hide and Show</h1>
+
+    <script>
+        function hide(id){
+            document.getElementById(id).style.display = 'none';
+        }
+
+        function show(id){
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</head>
+
+<body>
+    <p id = "p1">Sample Text</p>
+
+    <button onclick="hide('p1')">Hide</button>
+    <button onclick="show('p1')">Show</button>
+
+</body>
+</html>

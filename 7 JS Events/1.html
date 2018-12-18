@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Objects</title>
+    <h1>JavaScript Events</h1>
+
+    <script>
+        function display(){
+            document.getElementById('time').innerHTML = Date();
+        }
+        function changeColor(){
+           document.getElementById('time').style.color = 'red';
+        }
+        function displayOriginal(){
+           document.getElementById('time').style.color = 'black';
+        }
+    </script>
+
+</head>
+
+<body>
+    <p id="time" onmouseover="changeColor()" onmouseleave="displayOriginal()">Time is:</p>
+
+    <button onclick="display()" title="Click here">Click here</button>
+</body>
+</html>
