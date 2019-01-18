@@ -12,15 +12,12 @@
         function changeColor(){
            document.getElementById('time').style.color = 'red';
         }
-        function displayOriginal(){
-           document.getElementById('time').style.color = 'black';
-        }
     </script>
 
 </head>
 
 <body>
-    <p id="time" onmouseover="changeColor()" onmouseleave="displayOriginal()">Time is:</p>
+    <p id="time" onmouseover="changeColor()" onmouseleave="display()">Time is:</p>
 
     <button onclick="display()" title="Click here">Click here</button>
 </body>
